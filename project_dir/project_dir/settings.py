@@ -136,4 +136,4 @@ RABBITMQ_VHOST = os.environ.get('RABBITMQ_VHOST', '/')
 RABBITMQ_USER = os.environ.get('RABBITMQ_USER', 'guest')
 RABBITMQ_PASS = os.environ.get('RABBITMQ_PASS', 'guest')
 
-MSG_QUEUE = 'ms1_messages'
+MSG_QUEUE = os.environ.get('MSG_QUEUE', 'ms1_messages')
